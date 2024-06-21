@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project cars - Cadastro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="../CSS/style.css"> 
+</head>
+<body>
+    
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light"> 
+            <div class="container"> 
+
+                <div class="mr-5"> 
+                    <img src="../Imagens/logo.png" alt="" class="img-fluid" width="100px">
+                    <a href="index.html" class="navbar-brand ml-2">PROJECT CARS</a>
+                </div> 
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menuNavegacao"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+
+                <div class="collapse navbar-collapse" id="menuNavegacao"> 
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-5">
+                            <a href="" class="nav-link btn btn-success text-white"><i class="fab fa-whatsapp"></i> Fale pelo WhatsApp</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+        </nav> 
+    </header> 
+
+    <div id="loader" class="loader" style="display: none;"></div> 
+
+    <section class="mt-5"> 
+        <div class="container"> 
+            <div class="row justify-content-center"> 
+                <div class="col-md-8"> 
+                    <div class="form-container"> 
+                        <h2 class="text-center">Cadastre-se</h2>
+                        <form id="cadastroForm"> 
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmacaoSenha">Confirme a senha</label>
+                                <input type="password" class="form-control" id="confirmacaoSenha" placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit" class="btn btn-success w-100" id="botaoEnviar">Enviar</button>
+                        </form> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <footer class="mt-5"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-md-8"> 
+                    <h3 class="mt-3">Vá ate nossa loja!</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Avenida Manoel Tavares,  205</p>
+                </div> 
+                <div class="col-md-4"> 
+                    <a href="" class="nav-link btn btn-success text-white mt-4"><i class="fab fa-whatsapp"></i> Fale com nossos consultores</a>
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+
+    <div class="modal fade" id="modalCadastroUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div id="modal_titulo_div">
+              <h5 class="modal-title" id="modal_titulo"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modal_conteudo">
+                Usuário foi cadastrado com sucesso
+            </div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" id="modal_btn" class="btn btn-success">Voltar</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="formulario.js"></script> 
+</body>
+</html>
